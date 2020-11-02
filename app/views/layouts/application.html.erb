@@ -14,7 +14,7 @@
       <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
     <% end %>
     
-    <nav class="navbar navbar-dafault navbar-fixes-top navbar-transparent">
+    <nav class="navbar navbar-dafault navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
           <span><%= image_tag "icons/logo.png", class: "navbar-brand" %></span>
@@ -27,7 +27,7 @@
               <% end %>
             </li>
             <li>
-              <%= link_to "#" do %>
+              <%= link_to new_topic_path do %>
                 <%= image_tag "icons/camera.png" %>
               <% end %>
             </li>
@@ -55,7 +55,7 @@
     
     <script>
       $(function(){
-        $(".alert").fadeout(5000);
+        $(".alert").fadeOut(5000);
       });
     </script>
   </body>
