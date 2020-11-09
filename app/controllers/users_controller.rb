@@ -19,8 +19,4 @@ class UsersController < ApplicationController
   end
   
 
-
-  # skip_before_action :user_logged_in?
-  
-
 end
