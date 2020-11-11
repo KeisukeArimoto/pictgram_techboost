@@ -5,7 +5,7 @@ class FavoritesController < ApplicationController
   
   def create
     favorite = Favorite.new
-    favorite.user.id = current_user.id
+    favorite.user_id = current_user.id
     favorite.topic_id= params[:topic_id]
     
     if favorite.save
@@ -14,4 +14,13 @@ class FavoritesController < ApplicationController
       redirect_to topics_path, danger: 'お気に入り登録に失敗しました'
     end
   end
+  
+  
+  # いいねしたものを取り消す機能
+  def destroy
+    Favorite.find_by(user_id: current_user.id, post_id: params[:id]).destroy
+    redirect_to posts_path
+  end
+  
+  
 end

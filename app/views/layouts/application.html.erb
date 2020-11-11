@@ -47,8 +47,22 @@
                 <%= image_tag "icons/login.png" %>
               <% end %>
             </li>
+            
+            <!--投稿一覧機能のアイコン表示-->
+            <li>
+              <%= link_to topics_path do %>
+                <%= image_tag "icons/picture.png" %>
+              <% end %>
+            </li>
           <% end %>
         </ul>
+        
+        <!--いいねしているかどうかでCSSの切り替えを行う-->
+        <%# if topic.favorite_users.include? %>
+        <%# else %>
+        <%# end %>
+        
+        
       </div>
     </nav>
     <%= yield %>
