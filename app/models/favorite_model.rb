@@ -1,0 +1,2 @@
+class FavoriteModel < ApplicationRecord
+end
