@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   
   # get 'favorites/show'
   
+  resources :comments
   get 'comments/index'
-  post '/comments', to: 'comments#create'
+  get 'comments/new'
+  get 'comments/create'
+   
 end

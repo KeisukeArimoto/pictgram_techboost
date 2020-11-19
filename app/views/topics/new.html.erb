@@ -9,7 +9,7 @@
             <!--画像投稿機能-->
             <div class="form-group">
               <%= f.label :image %>
-              <%= f.file_field :image%>
+              <%= f.file_field :image %>
             </div>
             
             <!--descriptionの投稿機能-->
@@ -18,11 +18,6 @@
               <%= f.text_area :description, class: 'form-control' %>
             </div>
             
-            <!--comment投稿機能-->
-            <div class="form-group">
-              <%= f.label :comment %>
-              <%= f.text_area :comment, class: 'form-control' %>
-            </div>
             
             <!--投稿ボタン-->
             <%= f.submit '投稿', class: 'btn btn-black btn-block' %>

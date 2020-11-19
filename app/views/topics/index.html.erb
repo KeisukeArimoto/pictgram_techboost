@@ -27,7 +27,7 @@
               <% end %>
               
               <!--コメントボタン表示-->
-              <%= link_to comments_index_path(topic_id: topic.id), method: :post do %>
+              <%= link_to new_comment_path, method: :get do %>
                 <%= image_tag 'icons/comment.png' , class: 'topic-index-icon' %>
               <% end %>
               
@@ -38,6 +38,7 @@
               
               <!--コメント表示-->
               <p class="topic-text">コメント</p>
+            
             </div>
           </div>
         </div>
