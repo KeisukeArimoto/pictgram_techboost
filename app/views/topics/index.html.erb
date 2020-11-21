@@ -40,9 +40,10 @@
               <!--コメント表示-->
               <p class="topic-text">コメント</p>
               
-              <% @comments.each do |comment| %> 
+              <% topic.comments.each do |comment| %> 
               <p class="topic-text">
                 <%= comment.comment %>
+              <% end %>  
               </p>
             </div>
           </div>
